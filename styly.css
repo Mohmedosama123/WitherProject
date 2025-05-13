@@ -1,0 +1,413 @@
+/* Reset for all elements */
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-image: url("123.jpg"); /* ضع هنا رابط الصورة الخلفية */
+  background-size: cover; /* تأكد من تغطية الصورة لكافة الخلفية */
+  background-position: center; /* توسيط الصورة في الخلفية */
+  font-family: Arial, sans-serif; /* تعيين خط أساسي للصفحة */
+  color: #ffffff; /* تعيين لون النص */
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  display: flex; /* استخدام الفلكس لتنسيق المحتوى */
+  flex-direction: column; /* ترتيب العناصر عمودياً */
+  align-items: center; /* محاذاة العناصر في الوسط */
+}
+main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+  width: 100%; /* عرض الهيدر لكامل عرض الشاشة */
+  background-color: #1e1e1e; /* لون خلفية الهيدر */
+  padding: 0.5rem 0; /* تباعد داخلي أفقي ورأسي */
+  display: flex; /* استخدام الفلكس لترتيب العناصر داخل الهيدر */
+  justify-content: space-between; /* توزيع العناصر على طول المحور الأفقي */
+  align-items: center; /* محاذاة العناصر عمودياً في الوسط */
+  color: white; /* لون النص في الهيدر */
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+header ul li {
+  transition: 1s;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+  border: 1px solid gray;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+header ul li:hover {
+  transform: all;
+  color: blue;
+  background-color: gray;
+  -webkit-transform: all;
+  -moz-transform: all;
+  -ms-transform: all;
+  -o-transform: all;
+}
+
+/* Logo styling inside header */
+header .logo img {
+  width: 3rem; /* عرض الشعار */
+  margin-left: 0.5rem; /* تباعد للشعار من الجانب الأيسر */
+}
+
+/* Navigation styling inside header */
+header .nav {
+  display: flex; /* استخدام الفلكس لترتيب الروابط */
+  gap: rem; /* المسافة بين الروابط */
+  margin-right: 2rem; /* تباعد للروابط من الجانب الأيمن */
+}
+
+/* Navigation link styling */
+header .nav a {
+  color: white; /* لون النص للروابط */
+  text-decoration: none; /* إزالة التسطير الافتراضي */
+  font-size: 1rem; /* حجم الخط */
+  padding: 0.5rem 1rem; /* تباعد داخلي للروابط */
+  transition: background 0.3s; /* تأثير الانتقال عند تغيير الخلفية */
+}
+
+/* Navigation link hover effect */
+header .nav a:hover {
+  background-color: #333333; /* لون الخلفية عند التمرير */
+  border-radius: 5px; /* زاوية دائرية للخلفية */
+}
+
+/* Search bar styling */
+.search-bar {
+  width: 100%; /* عرض شريط البحث */
+  max-width: 98%; /* أقصى عرض لشريط البحث */
+  margin: 1rem auto; /* تباعد عمودي حول شريط البحث */
+  display: flex; /* استخدام الفلكس لتنسيق العناصر داخل شريط البحث */
+  justify-content: center; /* توسيط العناصر داخل شريط البحث */
+  position: relative; /* تعيين الموضع النسبي لشريط البحث */
+}
+
+/* Search input styling */
+.search-bar input {
+  width: 100%; /* عرض الحقل ليشمل كامل عرض شريط البحث */
+  padding: 1rem; /* تباعد داخلي للحقل */
+  border-radius: 25px; /* زاوية دائرية للحقل */
+  border: none; /* إزالة الحدود الافتراضية */
+  font-size: 1rem; /* حجم الخط */
+  padding-left: 2.5rem; /* تباعد داخلي من اليسار لإفساح المجال لأيقونة البحث */
+  background-color: #fff; /* لون خلفية الحقل */
+}
+/* Search button styling */
+.search-bar button {
+  position: absolute; /* تعيين الموضع المطلق للأيقونة */
+  right: 0.5rem; /* تباعد من الجانب الأيمن */
+  top: 0.5rem; /* تباعد من الأعلى */
+  background-color: #009ad8; /* لون خلفية الأيقونة */
+  color: white; /* لون النص في الأيقونة */
+  border: none; /* إزالة الحدود الافتراضية */
+  padding: 0.5rem 1rem; /* تباعد داخلي للأيقونة */
+  border-radius: 20px; /* زاوية دائرية للأيقونة */
+  cursor: pointer; /* تغيير المؤشر عند التمرير فوق الأيقونة */
+}
+
+/* Card container styling */
+.card-container {
+  display: flex; /* استخدام الفلكس لترتيب البطاقات *//* المسافة بين البطاقات */
+  justify-content: center; /* توسيط البطاقات في الحاوية */
+  width: 100%; /* عرض الحاوية لكامل عرض الشاشة */
+  max-width: 98%; /* أقصى عرض للحاوية */
+  margin: 1rem auto; /* تباعد عمودي حول الحاوية وتوسيطها */
+}
+
+/* Card styling */
+.container {
+  background-color: rgba(0, 0, 0, 0.6); /* لون خلفية البطاقة مع شفافية */
+  width: 32.66%; /* عرض البطاقة */
+  color: #ffffff; /* لون النص داخل البطاقة */
+  display: flex; /* استخدام الفلكس لتنسيق محتويات البطاقة */
+  flex-direction: column; /* ترتيب العناصر عمودياً */
+  align-items: center; /* محاذاة العناصر في الوسط */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* ظل البطاقة */
+  transition: transform 0.3s; /* تأثير الانتقال عند التمرير فوق البطاقة */
+}
+
+/* Card hover effect */
+.container:hover {
+  transform: translateY(-5px);
+}
+/* div1 */
+.borderOfCard {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* Card header styling */
+.borderOfCard .headOfCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 10px 0 0 0;
+  font-size: 1.2rem;
+  color: #b0b0b0;
+ border-bottom: 1px solid black;
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  -ms-border-radius: 10px 0 0 0;
+  -o-border-radius: 10px 0 0 0;
+}
+.borderOfEndCard .headOfCard {
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+/* Degree section styling inside card */
+.borderOfCard .degree {
+  font-size: 3.2rem; /* حجم الخط لقسم الشهادة */
+  display: flex; /* استخدام الفلكس لترتيب العناصر داخل الشهادة */
+  flex-direction: column; /* ترتيب العناصر عمودياً */
+  align-items: center;
+}
+/* 2div */
+.borderOfEndCard .degree {
+  font-size: 1.5rem; /* حجم الخط لقسم الشهادة */
+}
+
+/* Icon styling inside card */
+.icon img {
+  width: 100px; /* عرض الأيقونة */
+}
+
+/* Name section styling inside card */
+.name {
+  font-size: 1.5rem; /* حجم الخط لقسم الاسم */
+  margin-bottom: 0.5rem; /* تباعد أسفل قسم الاسم */
+  color: #b0b0b0; /* لون النص في قسم الاسم */
+}
+
+/* Text section styling inside card */
+.text {
+  font-size: 1.5rem; /* حجم الخط لقسم النص */
+  margin-bottom: 1rem; /* تباعد أسفل قسم النص */
+  color: #00afff; /* لون النص في قسم النص */
+}
+
+/* Base icons section styling */
+.base_icon span {
+  width: 60%; /* عرض قسم الأيقونات الأساسي لكامل عرض البطاقة */
+  font-size: 0.9rem; /* حجم الخط للأيقونات */
+  color: #b0b0b0;
+  padding-right: 1rem; /* لون الأيقونات */
+}
+
+/* Border styling for the start of the card */
+.borderOfCard {
+  border-radius: 10px 0 0 10px; /* زاوية دائرية للجزء الأيسر من البطاقة */
+}
+
+/* Border styling for the end of the card */
+#EndCard22 {
+  border-radius: 0px 10px 10px 0;
+  background-color: rgba(0, 0, 0,0.6);
+  -webkit-border-radius: 0px 10px 10px 0;
+  -moz-border-radius: 0px 10px 10px 0;
+  -ms-border-radius: 0px 10px 10px 0;
+  -o-border-radius: 0px 10px 10px 0;
+}
+
+/* Footer styling */
+footer{
+    width: 100%;
+    background-color: #111;
+}
+.footerInout{
+display: flex;
+justify-content: space-between;
+}
+.footer {
+  max-width: 98%;
+  color: #fff;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.footerInout .subscribe-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer input[type="text"] {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
+  -ms-border-radius: 20px 0 0 20px;
+  -o-border-radius: 20px 0 0 20px;
+}
+
+
+.footer button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #009ad8;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition-duration: .5s;
+}
+
+.footer button:hover {
+  background-color: #111;
+}
+
+.footer .social-icons {
+  margin: 20px 0;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.footer .social_icons i:hover{
+color: #00afff;
+}
+
+.footer .copyright {
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+
+main{
+    width: 98%;
+}
+
+/* Header styling */
+header {
+  padding: 0.1rem 0; /* تباعد داخلي أفقي ورأسي */
+}
+
+header ul li {
+  transition: 1s;
+  padding: 0.3rem;
+  margin-right: .5rem;
+}
+/* Logo styling inside header */
+header .logo img {
+  width: 2rem; /* عرض الشعار */
+  margin-left: .2rem; /* تباعد للشعار من الجانب الأيسر */
+}
+
+/* Search input styling */
+.search-bar input {
+  width: 100%; /* عرض الحقل ليشمل كامل عرض شريط البحث */
+  padding: .5rem; /* تباعد داخلي للحقل */
+  border-radius: 25px; /* زاوية دائرية للحقل */
+  border: none; /* إزالة الحدود الافتراضية */
+  font-size: 1rem; /* حجم الخط */
+  padding-left: 2.5rem; /* تباعد داخلي من اليسار لإفساح المجال لأيقونة البحث */
+  background-color: #fff; /* لون خلفية الحقل */
+}
+/* Search button styling */
+.search-bar button {
+  padding: 0.2rem 1rem; /* تباعد داخلي للأيقونة */
+  }
+
+/* Card container styling */
+.card-container {
+  display: inline;
+  margin: 0 auto; /* استخدام الفلكس لترتيب البطاقات *//* المسافة بين البطاقات */
+  }
+
+/* Card styling */
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  /*لونخلفيةالبطاقةمعشفافية*/width: 98%;
+  margin: 1.2rem auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+
+/* Icon styling inside card */
+.icon img {
+  width: 110px; /* عرض الأيقونة */
+}
+
+/* Base icons section styling */
+.base_icon span {
+  width: 60%; /* عرض قسم الأيقونات الأساسي لكامل عرض البطاقة */
+  font-size: 0.9rem; /* حجم الخط للأيقونات */
+  color: #b0b0b0;
+  padding-right: 1rem; /* لون الأيقونات */
+}
+
+
+/* Footer styling */
+footer{
+    width: 100%;
+    background-color: #111;
+}
+.footerInout{
+display: inline;
+}
+
+.footerInout .subscribe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer input[type="text"] {
+  padding: 5px;
+  width: 54%;
+ }
+
+
+.footer button {
+  padding: 5px 22px;
+  width: 20%;
+ }
+
+
+
+.footer .social-icons {
+  width: 76%;
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.footer .social_icons i{
+  margin: 0 auto;
+}
+
+}
